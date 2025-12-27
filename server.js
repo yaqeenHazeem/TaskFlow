@@ -12,7 +12,7 @@ app.use(express.json());
 
 /*Static Frontend */
 
-const frontendPath = path.join(__dirname, "..", "frontend");
+const frontendPath = path.join(__dirname, "frontend");
 app.use(express.static(frontendPath));
 
 app.get("/", (req, res) => {
